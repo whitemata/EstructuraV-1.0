@@ -78,6 +78,18 @@ namespace EstructuraV_1._0
             SendMessage(this.Handle, 0x112,0xf012,0); // MANDAR A LLAMAR METODOS CREADOS DE PALABRAS RESERVADAS
         }
 
+        private void btnUnidadII_Click(object sender, EventArgs e)
+        {
+            UnidadII frmUII = new UnidadII(); // INSTANCIA DE UNIDADI
+            AddOwnedForm(frmUII); // ABRIR DENTRO DEL PANEL
+            frmUII.TopLevel = false; // ESTABLECER QUE NO SERA TOPLEVEL
+            frmUII.Dock = DockStyle.Fill; // ESTABLECER DOCK DE TIPO FILL
+            this.Controls.Add(frmUII); // AGREGAR CONTROLES EN ESTE CASO FORMA
+            this.Tag = frmUII; // ESPECIFICAR EL TAG SOBRE FORM 
+            frmUII.BringToFront(); // COLOCAR FORM AL PRINCIPIO
+            frmUII.Show(); // MANDAR A LLAMAR FORM
+        }
+
         //// CODIGO PARA ABRIR FORM DENTRO DE PANEL
         //private void AbrirFormInPanel(object FormHijo)
         //{
@@ -95,7 +107,7 @@ namespace EstructuraV_1._0
 
         private void btnUnidadI_Click(object sender, EventArgs e)
         {
-            UnidadI frmUI = new UnidadI();
+            UnidadI frmUI = new UnidadI(); // INSTANCIA DE UNIDADI
             AddOwnedForm(frmUI); // ABRIR DENTRO DEL PANEL
             frmUI.TopLevel = false; // ESTABLECER QUE NO SERA TOPLEVEL
             frmUI.Dock = DockStyle.Fill; // ESTABLECER DOCK DE TIPO FILL

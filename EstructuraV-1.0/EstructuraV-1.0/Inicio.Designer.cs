@@ -193,6 +193,7 @@
             this.btnUnidadII.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnUnidadII.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUnidadII.UseVisualStyleBackColor = true;
+            this.btnUnidadII.Click += new System.EventHandler(this.btnUnidadII_Click);
             // 
             // btnUnidadI
             // 

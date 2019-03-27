@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnidadI));
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panContendor = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panMemoria = new System.Windows.Forms.Panel();
             this.lblMemoria = new System.Windows.Forms.Label();
@@ -37,23 +37,23 @@
             this.panPuntero = new System.Windows.Forms.Panel();
             this.lblPuntero = new System.Windows.Forms.Label();
             this.picPuntero = new System.Windows.Forms.PictureBox();
-            this.panel3.SuspendLayout();
+            this.panContendor.SuspendLayout();
             this.panMemoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMemoria)).BeginInit();
             this.panPuntero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPuntero)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel3
+            // panContendor
             // 
-            this.panel3.Controls.Add(this.btnCerrar);
-            this.panel3.Controls.Add(this.panMemoria);
-            this.panel3.Controls.Add(this.panPuntero);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1270, 638);
-            this.panel3.TabIndex = 2;
+            this.panContendor.Controls.Add(this.btnCerrar);
+            this.panContendor.Controls.Add(this.panMemoria);
+            this.panContendor.Controls.Add(this.panPuntero);
+            this.panContendor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panContendor.Location = new System.Drawing.Point(0, 0);
+            this.panContendor.Name = "panContendor";
+            this.panContendor.Size = new System.Drawing.Size(1270, 638);
+            this.panContendor.TabIndex = 2;
             // 
             // btnCerrar
             // 
@@ -145,11 +145,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(1270, 638);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panContendor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UnidadI";
             this.Text = "UnidadI";
-            this.panel3.ResumeLayout(false);
+            this.panContendor.ResumeLayout(false);
             this.panMemoria.ResumeLayout(false);
             this.panMemoria.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMemoria)).EndInit();
@@ -161,7 +161,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panContendor;
         private System.Windows.Forms.Panel panPuntero;
         private System.Windows.Forms.Label lblPuntero;
         private System.Windows.Forms.PictureBox picPuntero;

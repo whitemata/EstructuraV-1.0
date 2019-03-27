@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrAlberto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAlberto.Designer.cs">
+      <DependentUpon>FrAlberto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrAlonso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAlonso.Designer.cs">
+      <DependentUpon>FrAlonso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrBlanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrBlanco.Designer.cs">
+      <DependentUpon>FrBlanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrLeopoldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrLeopoldo.Designer.cs">
+      <DependentUpon>FrLeopoldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnidadII.Designer.cs">
+      <DependentUpon>UnidadII.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrPuntero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +96,18 @@
     <Compile Include="UnidadI.Designer.cs">
       <DependentUpon>UnidadI.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrAlberto.resx">
+      <DependentUpon>FrAlberto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrAlonso.resx">
+      <DependentUpon>FrAlonso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrLeopoldo.resx">
+      <DependentUpon>FrLeopoldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnidadII.resx">
+      <DependentUpon>UnidadII.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrPuntero.resx">
       <DependentUpon>FrPuntero.cs</DependentUpon>
     </EmbeddedResource>
