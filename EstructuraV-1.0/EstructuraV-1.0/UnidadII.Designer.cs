@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnidadII));
             this.panContenedor = new System.Windows.Forms.Panel();
             this.panBlanco = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,24 +76,28 @@
             this.panBlanco.Name = "panBlanco";
             this.panBlanco.Size = new System.Drawing.Size(386, 209);
             this.panBlanco.TabIndex = 10;
+            this.panBlanco.Click += new System.EventHandler(this.panBlanco_Click);
+            this.panBlanco.MouseEnter += new System.EventHandler(this.panBlanco_MouseEnter);
+            this.panBlanco.MouseLeave += new System.EventHandler(this.panBlanco_MouseLeave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(159, 157);
+            this.label1.Location = new System.Drawing.Point(30, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 25);
+            this.label1.Size = new System.Drawing.Size(340, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Blanco";
+            this.label1.Text = "Blanco Melendez Manuel Eduardo";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(150, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

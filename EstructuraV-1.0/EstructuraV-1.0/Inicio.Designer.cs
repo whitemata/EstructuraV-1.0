@@ -335,12 +335,13 @@
             // 
             // picLogo
             // 
+            this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(609, 166);
+            this.picLogo.Location = new System.Drawing.Point(558, 196);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(332, 332);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
+            this.picLogo.TabIndex = 1;
             this.picLogo.TabStop = false;
             // 
             // Inicio

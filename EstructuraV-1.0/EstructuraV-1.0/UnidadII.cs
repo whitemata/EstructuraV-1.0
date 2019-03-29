@@ -52,5 +52,27 @@ namespace EstructuraV_1._0
             frmLeo.BringToFront(); // COLOCAR FORM AL PRINCIPIO
             frmLeo.Show(); // MANDAR A LLAMAR FORM
         }
+
+        private void panBlanco_Click(object sender, EventArgs e)
+        {
+            FrBlanco frmBla = new FrBlanco(); // INTANCIA BLANCO
+            AddOwnedForm(frmBla); //  ABRIR DENTRO DEL PANEL
+            frmBla.TopLevel = false; // ESTABLECER QUE NO SERA TOPLEVEL
+            frmBla.Dock = DockStyle.Fill; // ESTABLECER DOCK DE TIPO FILL
+            this.Controls.Add(frmBla); // AGREGAR CONTROLES EN ESTE CASO FORMA
+            this.Tag = frmBla; // ESPECIFICAR EL TAG SOBRE FORM 
+            frmBla.BringToFront(); // COLOCAR FORM AL PRINCIPIO
+            frmBla.Show(); // MANDAR A LLAMAR FORM
+        }
+
+        private void panBlanco_MouseEnter(object sender, EventArgs e)
+        {
+            panBlanco.BackColor = Color.FromArgb(226, 204, 0); // CAMBIA COLOR AL PASAR MOUSE POR ENCIMA
+        }
+
+        private void panBlanco_MouseLeave(object sender, EventArgs e)
+        {
+            panBlanco.BackColor = Color.FromArgb(40, 45, 54); // CAMBIAR COLOR AL NO ESTAR MOUSE ENCIMA
+        }
     }
 }
